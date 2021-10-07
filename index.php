@@ -24,7 +24,10 @@
                 <ul>
                     <?php 
                         $data = file_get_contents("routes.json");
+                        echo $data;
+
                         $data = $data["data"];
+                        echo $data;
 
                         foreach ($data as $link) {
                     ?>
