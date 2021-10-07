@@ -23,7 +23,7 @@
             <div>
                 <ul>
                     <?php 
-                        $data = file_get_contents("css-color-names.json");
+                        $data = file_get_contents("routes.json");
                         $data = $data["data"];
 
                         foreach ($data as $link) {
