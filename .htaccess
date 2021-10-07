@@ -1,0 +1,8 @@
+Options +FollowSymlinks -Indexes
+
+RewriteEngine on
+
+Rewritecond %{HTTP_HOST} ^papierpain.fr$
+Rewriterule ^(.*) https://www.papierpain.fr/ [QSA,L,R=301]
+
+RewriteCond %{REQUEST_FILENAME} !-f
