@@ -1,0 +1,36 @@
+{
+    "data": [
+        {
+            "name": "Accueil",
+            "url": "/"
+        },
+        {
+            "name": "Portfolio",
+            "url": "https://www.gourves-steven.fr"
+        },
+        {
+            "name": "Documentations",
+            "url": "https://docs.papierpain.fr"
+        },
+        {
+            "name": "Gitea",
+            "url": "https://gitea.papierpain.fr"
+        },
+        {
+            "name": "Nuage",
+            "url": "https://nuage.papierpain.fr"
+        },
+        {
+            "name": "CI/CD",
+            "url": "https://drone.papierpain.fr"
+        },
+        {
+            "name": "Site de recette",
+            "url": "https://bouffe.papierpain.fr"
+        },
+        {
+            "name": "Gwynt",
+            "url": "https://gwynt.papierpain.fr"
+        }
+    ]
+}

@@ -18,47 +18,24 @@
 
     <body>
         <main>
-            <div class="left">
-                <h1>Hack This Page</h1>
-                <p>I'm an pineapple and I can talk with you...</p>
-            </div>
+            <h1>Du PAPIER avec du PAIN</h1>
 
-            <div class="right">
+            <div>
                 <ul>
-                    <li>
-                        <a href="https://www.gourves-steven.fr">Portfolio</a>
-                    </li>
+                    <?php 
+                        $data = file_get_contents("css-color-names.json");
+                        $data = $data["data"];
+
+                        foreach ($data as $link) {
+                    ?>
 
                     <li>
-                        <a href="/">This page</a>
+                        <a href="<?= $link["url"] ?>"><?= $link["name"] ?></a>
                     </li>
 
-                    <li>
-                        <a href="https://ananas.papierpain.fr">Ananas</a>
-                    </li>
-
-                    <!-- <li>
-                        <a href="https://cloud.papierpain.fr">Cloud</a>
-                    </li> -->
-
-                    <li>
-                        <a href="https://docs.papierpain.fr">Documentations</a>
-                    </li>
-
-                    <li>
-                        <a href="https://bouffe.papierpain.fr">Bouffe</a>
-                    </li>
-
-                    <li>
-                        <a href="https://www.gourves-steven.fr/golden-globe">Golden Globe Race</a>
-                    </li>
+                    <?php } ?>
                 </ul>
             </div>
         </main>
-        
-        <footer>
-        </footer>
-        
-        <!-- <script src="/public/main.js"></script> -->
     </body>
 </html>
