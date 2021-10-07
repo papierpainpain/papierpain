@@ -23,11 +23,8 @@
             <div>
                 <ul>
                     <?php 
-                        $data = json_decode(file_get_contents("routes.json"));
-                        // echo $data;
-
+                        $data = json_decode(file_get_contents("routes.json"), true);
                         $data = $data["data"];
-                        echo $data;
 
                         foreach ($data as $link) {
                     ?>
