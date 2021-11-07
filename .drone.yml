@@ -23,6 +23,7 @@ steps:
         from_secret: PWD_PAIN
       port: 7137
       script:
+        - cd /var/www/html
         - rm -rf papierpain
 
   - name: deploy
