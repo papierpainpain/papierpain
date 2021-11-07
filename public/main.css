@@ -17,6 +17,7 @@ body{
     color: #f2f2f2;
 
     background: url('/public/images/background.jpg') no-repeat center top;
+    background-attachment: fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -55,6 +56,8 @@ ul {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 0;
+    margin: 0;
 }
 
 li {
