@@ -2,10 +2,12 @@ variables:
   PROJECT_NAME: papierpain
 
 stages:
+  - clean
   - deploy
   - test
 
-before_script:
+clean:
+  stage: clean
   tags:
     - nananas
     - ssh
