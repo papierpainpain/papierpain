@@ -1,0 +1,38 @@
+variables:
+  PROJECT_NAME: papierpain
+
+stages:
+  - deploy
+  - test
+
+before_script:
+  tags:
+    - nananas
+    - ssh
+  script:
+    - rm -rf /var/www/html/$PROJECT_NAME
+    - mkdir /var/www/html/$PROJECT_NAME
+  only:
+    - master
+
+deploy:
+  stage: deploy
+  tags:
+    - localhost
+    - shell
+  script:
+    - scp -r -P ${NANANAS_SSH_PORT} * ${NANANAS_USER}@${NANANAS_HOST}:/var/www/html/${PROJECT_NAME}/
+  only:
+    - master
+
+test:
+  stage: test
+  script:
+    - echo "Test url"
+    - curl http://papierpain.fr
+
+workflow:
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "web"'
+      when: always
+    - when: never

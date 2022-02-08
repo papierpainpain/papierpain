@@ -9,27 +9,23 @@
             "url": "https://www.gourves-steven.fr"
         },
         {
-            "name": "Documentations",
+            "name": "Wiki Pain</br>(docs/tuto)",
             "url": "https://docs.papierpain.fr"
         },
         {
-            "name": "Gitea",
-            "url": "https://gitea.papierpain.fr"
+            "name": "Papier Lab</br>(gitlab)",
+            "url": "https://gitlab.papierpain.fr"
         },
         {
-            "name": "Nuage",
+            "name": "Nuage</br>(cloud)",
             "url": "https://nuage.papierpain.fr"
-        },
-        {
-            "name": "CI/CD",
-            "url": "https://drone.papierpain.fr"
         },
         {
             "name": "Site de recette",
             "url": "https://bouffe.papierpain.fr"
         },
         {
-            "name": "Gwynt",
+            "name": "Règles du gwynt</br>(The Witcher)",
             "url": "https://gwynt.papierpain.fr"
         }
     ]
