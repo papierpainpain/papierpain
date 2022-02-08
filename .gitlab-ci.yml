@@ -29,9 +29,14 @@ deploy:
 
 test:
   stage: test
+  tags:
+    - localhost
+    - shell
   script:
     - echo "Test url"
     - curl http://papierpain.fr
+  only:
+    - master
 
 workflow:
   rules:
