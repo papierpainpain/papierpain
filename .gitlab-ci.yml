@@ -1,5 +1,7 @@
 variables:
-  PROJECT_NAME: papierpain
+  PROJECT_NAME: 
+    value: "papierpain"
+    description: "project name in /var/www/html/"
 
 stages:
   - clean-deploy
