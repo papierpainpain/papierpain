@@ -2,30 +2,18 @@ variables:
   PROJECT_NAME: papierpain
 
 stages:
-  - clean
-  - deploy
+  - clean-deploy
   - test
 
-clean:
-  stage: clean
-  tags:
-    - nananas
-    - ssh
-  script:
-    - rm -rf /var/www/html/$PROJECT_NAME
-    - mkdir /var/www/html/$PROJECT_NAME
-  only:
-    - master
-
-deploy:
-  stage: deploy
+clean-deploy:
+  stage: clean-deploy
   tags:
     - localhost
     - shell
   script:
-    - scp -r -P ${NANANAS_SSH_PORT} * ${NANANAS_USER}@${NANANAS_HOST}:/var/www/html/${PROJECT_NAME}/
-  only:
-    - master
+    - rm -rf /var/www/html/$PROJECT_NAME
+    - mkdir /var/www/html/$PROJECT_NAME
+    - cp -r * /var/www/html/$PROJECT_NAME
 
 test:
   stage: test
@@ -35,8 +23,6 @@ test:
   script:
     - echo "Test url"
     - curl http://papierpain.fr
-  only:
-    - master
 
 workflow:
   rules:
