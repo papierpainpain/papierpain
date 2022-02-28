@@ -74,6 +74,7 @@ li a {
     background-color: #00263A;
     width: 180px;
     height: 180px;
+    display: flex;
 }
 
 li a:hover {
@@ -90,4 +91,5 @@ li a p {
     font-weight: bold;
     margin: auto;
     text-align: center;
+    font-size: 1em;
 }
