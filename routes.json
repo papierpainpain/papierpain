@@ -9,6 +9,10 @@
             "url": "https://www.gourves-steven.fr"
         },
         {
+            "name": "LDAPain</br>(gestion comptes LDAP)",
+            "url": "https://ldapain.papierpain.fr"
+        },
+        {
             "name": "Wiki Pain</br>(docs/tuto)",
             "url": "https://wiki.papierpain.fr"
         },
@@ -25,8 +29,16 @@
             "url": "https://bouffe.papierpain.fr"
         },
         {
+            "name": "Monitoring</br>(Grafana)",
+            "url": "https://monitoring.papierpain.fr"
+        },
+        {
             "name": "Règles du gwynt</br>(The Witcher)",
             "url": "https://gwynt.papierpain.fr"
+        },
+        {
+            "name": "Projets</br>ENSSAT",
+            "url": "https://enssat.papierpain.fr"
         }
     ]
 }
