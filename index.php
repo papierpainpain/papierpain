@@ -28,7 +28,7 @@
                     ?>
 
                     <li>
-                        <a href="<?= $link["url"] ?>"><?= $link["name"] ?></a>
+                        <a href="<?= $link["url"] ?>"><p><?= $link["name"] ?></p></a>
                     </li>
 
                     <?php } ?>
