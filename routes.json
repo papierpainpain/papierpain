@@ -1,10 +1,6 @@
 {
     "data": [
         {
-            "name": "Accueil",
-            "url": "/"
-        },
-        {
             "name": "Portfolio",
             "url": "https://www.gourves-steven.fr"
         },
