@@ -1,40 +1,60 @@
 {
     "data": [
         {
-            "name": "Portfolio",
-            "url": "https://www.gourves-steven.fr"
+            "title": "LDAPain",
+            "img": "<i class=\"fas fa-user\"></i>",
+            "url": "https://ldapain.papierpain.fr",
+            "description": "Management of LDAP accounts for papierpain sites (password reset, creation, modification and deletion of accounts).",
+            "tags": ["project", "tool", "manage"]
         },
         {
-            "name": "LDAPain</br>(gestion comptes LDAP)",
-            "url": "https://ldapain.papierpain.fr"
+            "title": "WikiPain",
+            "img": "<i class=\"fas fa-book\"></i>",
+            "url": "https://wiki.papierpain.fr",
+            "description": "Tutorials about all kinds of developments or related to raspberry pi configuration.",
+            "tags": ["project", "tool", "personal"]
         },
         {
-            "name": "Wiki Pain</br>(docs/tuto)",
-            "url": "https://wiki.papierpain.fr"
+            "title": "Papier Lab (Gitlab)",
+            "img": "<i class=\"fab fa-gitlab\"></i>",
+            "url": "https://gitlab.papierpain.fr",
+            "description": "Git repositories manager with CICD (Gitlab CI and Ansible).",
+            "tags": ["tool", "manage"]
         },
         {
-            "name": "Papier Lab</br>(gitlab)",
-            "url": "https://gitlab.papierpain.fr"
+            "title": "Papierfile (Seafile)",
+            "img": "<i class=\"fas fa-cloud\"></i>",
+            "url": "https://nuage.papierpain.fr",
+            "description": "File manager (Seafile).",
+            "tags": ["tool", "cloud"]
         },
         {
-            "name": "Nuage</br>(cloud)",
-            "url": "https://nuage.papierpain.fr"
+            "title": "Papier Bouffe",
+            "img": "<i class=\"fas fa-cookie-bite\"></i>",
+            "url": "https://bouffe.papierpain.fr",
+            "description": "Website with a LOT of recipes",
+            "tags": ["project", "personal"]
         },
         {
-            "name": "Site de recette",
-            "url": "https://bouffe.papierpain.fr"
+            "title": "Monitoring (Grafana)",
+            "img": "<i class=\"fas fa-stethoscope\"></i>",
+            "url": "https://monitoring.papierpain.fr",
+            "description": "Monitoring the Raspberry pi environments of the papierpain services.",
+            "tags": ["tool", "manage"]
         },
         {
-            "name": "Monitoring</br>(Grafana)",
-            "url": "https://monitoring.papierpain.fr"
+            "title": "Gwent rules (The Witcher)",
+            "img": "<i class=\"fas fa-gamepad\"></i>",
+            "url": "https://gwynt.papierpain.fr",
+            "description": "Rules of the card game Gwent from the universe of The Witcher.",
+            "tags": ["project", "personal"]
         },
         {
-            "name": "Règles du gwynt</br>(The Witcher)",
-            "url": "https://gwynt.papierpain.fr"
-        },
-        {
-            "name": "Projets</br>ENSSAT",
-            "url": "https://enssat.papierpain.fr"
+            "title": "ENSSAT projects",
+            "img": "<i class=\"fas fa-graduation-cap\"></i>",
+            "url": "https://enssat.papierpain.fr",
+            "description": "Projects carried out at ENSSAT (ITI engineer)",
+            "tags": ["project"]
         }
     ]
 }
