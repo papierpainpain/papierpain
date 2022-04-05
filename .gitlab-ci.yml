@@ -26,8 +26,8 @@ test:
     - echo "Test url"
     - curl http://papierpain.fr
 
-workflow:
-  rules:
-    - if: '$CI_PIPELINE_SOURCE == "web"'
-      when: always
-    - when: never
+#workflow:
+#  rules:
+#    - if: '$CI_PIPELINE_SOURCE == "web"'
+#      when: always
+#    - when: never
