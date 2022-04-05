@@ -38,7 +38,7 @@
         {
             "title": "Monitoring (Grafana)",
             "img": "<i class=\"fas fa-stethoscope\"></i>",
-            "url": "https://monitoring.papierpain.fr",
+            "url": "https://grafana.papierpain.fr",
             "description": "Monitoring the Raspberry pi environments of the papierpain services.",
             "tags": ["tool", "manage"]
         },
