@@ -22,7 +22,7 @@
             "tags": ["tool", "manage"]
         },
         {
-            "title": "Papierfile (Seafile)",
+            "title": "Nuage (Seafile)",
             "img": "<i class=\"fas fa-cloud\"></i>",
             "url": "https://nuage.papierpain.fr",
             "description": "File manager (Seafile).",
