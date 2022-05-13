@@ -24,7 +24,7 @@
         {
             "title": "Papierfile (Seafile)",
             "img": "<i class=\"fas fa-cloud\"></i>",
-            "url": "https://ripseafile.papierpain.fr",
+            "url": "https://nuage.papierpain.fr",
             "description": "File manager (Seafile).",
             "tags": ["tool", "cloud"]
         },
