@@ -30,7 +30,7 @@ deploy:
     VARIABLES: 'papierpain_version=$PAPIERPAIN_VERSION'
   trigger:
     project: nananas/ansible
-    branch: master
+    branch: PAP-102-maj-papierpain-fr # TO CHANGE
     strategy: depend
   needs:
     - job: version
