@@ -55,13 +55,6 @@
             "url": "https://gwynt.papierpain.fr",
             "description": "Rules of the card game Gwent from the universe of The Witcher.",
             "tags": ["project", "personal"]
-        },
-        {
-            "title": "ENSSAT projects",
-            "img": "<i class=\"fas fa-graduation-cap\"></i>",
-            "url": "https://enssat.papierpain.fr",
-            "description": "Projects carried out at ENSSAT (ITI engineer)",
-            "tags": ["project"]
         }
     ]
 }
