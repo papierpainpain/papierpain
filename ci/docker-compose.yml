@@ -1,0 +1,49 @@
+version: '3'
+
+services:
+  app:
+    image: registry.papierpain.fr/labo/papierpain:${VERSION}
+    deploy:
+      mode: replicated
+      replicas: 1
+      restart_policy:
+        max_attempts: 3
+      labels:
+        - traefik.enable=true
+        - traefik.docker.network=cloud-public
+        - traefik.constraint-label=cloud-public
+
+        ## REDIRECTION VERS : www.papierpain.fr
+        - traefik.http.middlewares.papierpain-redirect.redirectregex.regex=((http|https)://|http://www.)papierpain.fr(.*)
+        - traefik.http.middlewares.papierpain-redirect.redirectregex.replacement=https://www.papierpain.fr$${3}
+        - traefik.http.middlewares.papierpain-redirect.redirectregex.permanent=true
+
+        ## DOMAINE A REDIRIGER ##
+        # http://papierpain.fr
+        - traefik.http.routers.papierpain-non-www.entrypoints=web
+        - traefik.http.routers.papierpain-non-www.rule=Host(`papierpain.fr`)
+        - traefik.http.routers.papierpain-non-www.middlewares=papierpain-redirect
+        # https://papierpain.fr
+        - traefik.http.routers.papierpain-https-non-www.entrypoints=websecure
+        - traefik.http.routers.papierpain-https-non-www.rule=Host(`papierpain.fr`)
+        - traefik.http.routers.papierpain-https-non-www.middlewares=papierpain-redirect
+        # http://www.papierpain.fr
+        - traefik.http.routers.papierpain.entrypoints=web
+        - traefik.http.routers.papierpain.rule=Host(`www.papierpain.fr`)
+        - traefik.http.routers.papierpain.middlewares=papierpain-redirect
+        
+        ## HTTPS ##
+        - traefik.http.routers.papierpain-https.entrypoints=websecure
+        - traefik.http.routers.papierpain-https.rule=Host(`www.papierpain.fr`)
+        - traefik.http.routers.papierpain-https.tls=true
+        - traefik.http.routers.papierpain-https.tls.certresolver=letsencrypt
+        - traefik.http.routers.papierpain-https.tls.options=default
+        
+        ## LOADBALANCER ##
+        - traefik.http.services.papierpain-https.loadbalancer.server.port=80
+    networks:
+      - cloud-public
+
+networks:
+  cloud-public:
+    external: true
